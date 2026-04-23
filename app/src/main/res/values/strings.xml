@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NEXA</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="discover_devices">Discover Devices</string>
+    <string name="show_paired_devices">Show Paired Devices</string>
+    <string name="connect_to_first_paired_device">Connect to First Paired Device</string>
+    <string name="receive_connections">Receive Connections</string>
+</resources>

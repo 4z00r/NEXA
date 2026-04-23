@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="CoarseFineLocation">
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true" /> <!-- makes sure that bluetooth classic is required (got from developer.android) -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"
+        /> <!-- gives/requests perms for device to scan for other devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" /><!-- gives/requests perms for device to advertise to other devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- gives/requests perms for device to connect to already paired devices -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- gives/requests perms for app to access device location >> not sure if this is necessary yet -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- perms to initiate device discovery -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- perms to access location in background -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<!--    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30" />-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NEXA">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+<!--        <activity-->
+<!--            android:name=".views.ProfileAct"-->
+<!--            android:exported="false" />-->
+
+    </application>
+
+</manifest>
